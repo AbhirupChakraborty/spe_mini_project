@@ -35,8 +35,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'deploy-docker/inventory',
-                 playbook: 'deploy-docker/playbook.yml', sudoUser: null, extras: '-e "image_name=abhirup18/spe_miniproj"'
+                ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'docker-deploy/inventory',
+                 playbook: 'docker-deploy/playbook.yml', sudoUser: null, extras: '-e "image_name=abhirup18/spe_miniproj"'
             }
         }
     }
