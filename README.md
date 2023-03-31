@@ -1,1 +1,1 @@
-spe_mini_project
+speminiproject
